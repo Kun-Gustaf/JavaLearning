@@ -1,0 +1,42 @@
+今日内容：
+web中的HTML CSS
+HTML  超文本标记语言
+      页面的结构 首行声明文档类型>根标记>头部标记/主体标记
+      标记
+         div 布局 切割 分割 划分区域
+         span 标记 存放文本信息
+         br 换行
+         script 脚本
+         style 风格/样式
+         meta 元 元数据 设置字符编码集
+      属性  标记中内部  id class type charset style
+CSS 层叠样式表
+    <style>
+        选择器:三种基本选择器 id class 标记
+        height
+        width
+        color
+        background-image
+        background-color
+        background-size
+        background-repeat
+        font-size
+        font-weight
+        font-family
+        margin
+            margin-bottom
+        display
+        position
+            relative
+            absolute
+        left
+        top
+        border
+        border-radius
+        overflew
+
+    </style>
+
+
+
+SQL structor query language 结构化查询语言
