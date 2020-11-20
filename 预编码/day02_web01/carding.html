@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 注释标记的快捷键 ctrl+shift+/ -->
+<!-- head 头部标记 控制性信息 控制body中的内容信息-->
+<head>
+    <!--    设置字符集编码格式为UTF-8 -->
+    <meta charset="UTF-8">
+    <title>card</title>
+    <style>
+        <!--   -->
+        /* Java注释 */
+        /* 删除某一行的快捷键ctrl+d
+
+            选择器：
+                  三种基本选择器：id选择器  标记选择器 class选择器
+                  id选择器语法格式： #id 值{}
+                  标记选择器语法格式： 标记名称{}
+                  class选择器语法格式： .class值{}  开发中这类型选择器使用频率较高 灵活度高
+
+         */
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        html{
+            height: 100%;
+        }
+
+        body{
+            height: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-image: url("./bg.jpg");
+            overflow: hidden;
+        }
+
+        .box{
+            height: 350px;
+            width: 500px;
+            /*设置标记的倒角 border-radius
+            border-radius 2% 参照本标记的尺寸
+            */
+            border-radius: 2%;
+            margin: 100px auto;
+            border: 1px solid gray;
+            background-color: white;
+            /*移动页面中的，某一个标记，一般需要使用定位属性 position
+             absolute 绝对的
+             relative 相对的
+             父标记使用相对定位，子标记使用绝对定位   -->父相子绝
+             位置移动的属性：left right top bottom
+             left 左边的 靠做的 实际上往右移动  距离左边多远 水平方向移动
+             top 上边的 靠上的 实际上往下移动 距离上边有多远  垂直方向移动
+             position:relative;
+             百分比 比例是参照父标记 如果父标记没有position定位属性
+             会一直向上找,直到根标记html结束
+             left:25%;
+             top:15%;
+            */
+
+        }
+
+        .logo {
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 309px;
+            height: 76px;
+            background-image: url("logo.png");
+        }
+
+        .header {
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            border-radius: 50%;
+            background-image: url("./header.png");
+            margin-right: 40px;
+        }
+
+        .main {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .message {
+            width: 250px;
+            margin-left: 10px;
+        }
+        /*标记选择器 标记名称{}
+        设置下边距 margin-bottom
+        margin 外边距 外间距
+        bottom 底部，下部，下边
+        根据标记的两大特征(
+            1.该标记是否可以独占一行
+            2.该标记是否可以设置高度和宽度
+        )
+        来区分: 行标记 块标记
+        行标记：不独占一行，一般不能设置高度和宽度 如span标记  inline 在一行上
+        块标记：独占一行，能够设置高度和宽度  如div标记  block 块
+        */
+        span{
+            /*强制性改变特征 display*/
+            /*display:block;*/
+
+            line-height: 35px;
+            font-size: 18px;
+            /*设置字体家族
+              font-family 宋体
+            */
+            font-family: 宋体;
+        }
+
+        span:first-child{
+            font-size: 25px;
+
+            /*font-weight weight 体重，重量  字体粗细  bolder 加粗 lighter 变细*/
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+<!--division 布局
+    设置高度和宽度 style
+    height
+    width
+  -->
+    <div class="box">
+        <div class="logo">
+        </div>
+
+
+        <div class="main">
+
+            <div class="message">
+                <span>
+                        姓名：张三
+                </span><br>
+                <span>
+                        职位：java讲师
+                </span>
+                <!--换行标记br-->
+                <br>
+                <span>
+                        手机号：1883889888
+                </span><br>
+                <span>
+                        QQ:8886888
+                </span><br>
+                <span>
+                        邮箱：8886888@qq.com
+                </span>
+            </div>
+            <div class="header">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
